@@ -1,7 +1,8 @@
 Phalcon Debug Widget (PDW) (forked from [jymboche/phalcon-debug-widget](https://github.com/jymboche/phalcon-debug-widget))
+===
 
 [Phalcon2 PDW](https://github.com/Zazza/phalcon2-debug-widget)
-===
+
 Note (How it works):
 =====
 The debug widget for now is very simplistic and more of a proof-of-concept. It expects you have three services in your dependency injector named "db", "dispatcher" and "view" and that they correspond to those services. When you pass the DI to Phalcon Debug Widget It looks for those specific services and:
