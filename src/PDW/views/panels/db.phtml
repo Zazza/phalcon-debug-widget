@@ -4,7 +4,7 @@
 ?>
 <div id='pdw-panel-db' class='pdw-panel db'>
 	<div class='title'>
-		<h2>Database Info <a class='pdw-panel-close'>&times;</a></h2>
+		<h2>Database Info</h2>
 	</div>
 	<div class='panel-content'>
 		<h3 class='collapser'>SQL Queries</h3>
@@ -53,7 +53,7 @@
 					echo "<tr>";
 						echo "<td>{$k}</td>";
                         if (is_string($v))
-        		    if ($k != "password")
+                            if ($k != "password")
                                 echo "<td>{$v}</td>";
                             else
                                 echo "<td>**********</td>";
