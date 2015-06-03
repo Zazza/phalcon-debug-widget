@@ -196,7 +196,7 @@
         document.getElementById("pdw-toolbar-hide").style.display = 'block';
         document.getElementById("pdw-toolbar").style.display = 'none';
     };
-    if (getCookie("pdwIsOpen")) {
+    if (getCookie("pdwIsOpen") == "true") {
         document.getElementById("pdw-toolbar-hide").style.display = 'none';
         document.getElementById("pdw-toolbar").style.display = 'block';
     } else {
