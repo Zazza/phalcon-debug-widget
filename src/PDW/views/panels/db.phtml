@@ -49,20 +49,22 @@
 				<td><?php echo $db->getType(); ?></td>
 			</tr>
 			<?php
-				foreach($descriptors as $k=>$v):
-					echo "<tr>";
-						echo "<td>{$k}</td>";
-                        if (is_string($v))
-                            if ($k != "password")
-                                echo "<td>{$v}</td>";
-                            else
-                                echo "<td>**********</td>";
-                        else
-                            echo "<td>";
-                            print_r($v);
-                            echo "</td>";
-					echo "</tr>";
-				endforeach;
+				foreach($descriptors as $k=>$v) {
+                    echo "<tr>";
+                    echo "<td width='100px;'>{$k}</td>";
+
+                    if (is_string($v)) {
+                        if ($k != "password") {
+                            echo "<td>{$v}</td>";
+                        } else {
+                            echo "<td>**********</td>";
+                        }
+                    } else {
+                        echo "<td></td>";
+                    }
+
+                    echo "</tr>";
+                };
 			?>
 			</tbody>
 		</table>

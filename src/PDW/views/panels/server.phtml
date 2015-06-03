@@ -7,15 +7,15 @@
 		<table class='pdw-data-table'>
 			<thead>
 				<tr>
-					<th>Key</th>
-					<th>Value</th>
+					<td style="min-width: 200px;"><b>Key</b></td>
+					<td><b>Value</b></td>
 				</tr>
 			</thead>
 			<tbody>
 			<?php
 				foreach($_SERVER as $k=>$v):
 					echo "<tr>";
-						echo "<td>{$k}</td>";
+						echo "<td style='min-width: 200px;'>{$k}</td>";
 						echo "<td>{$v}</td>";
 					echo "</tr>";
 				endforeach;
@@ -27,20 +27,20 @@
 		<table class='pdw-data-table'>
 			<thead>
 				<tr>
-					<th>Key</th>
-					<th>Value</th>
+					<td style='min-width: 200px;'><b>Key</b></td>
+					<td><b>Value</b></td>
 				</tr>
 			</thead>
 			<tbody>
 			<?php
 				$headers = headers_list();
 				$headers = !$headers? array() : $headers;
-				foreach($headers as $k=>$v):
-					echo "<tr>";
-						echo "<td>{$k}</td>";
-						echo "<td>{$v}</td>";
-					echo "</tr>";
-				endforeach;
+				foreach($headers as $k=>$v) {
+                    echo "<tr>";
+                    echo "<td style='min-width: 200px;'>{$k}</td>";
+                    echo "<td>{$v}</td>";
+                    echo "</tr>";
+                };
 			?>
 			</tbody>
 		</table>
